@@ -5,6 +5,6 @@ addons:
    sonarcloud:
       organization: "maxwellray-github"
       token:
-         secure: 577804a3acb4cba0fa0e5a2df1bd0eb6a114df8d
+         secure: 66d39d5daa7049bf89edbbddaccc63564f58ab81
 script:
    mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
