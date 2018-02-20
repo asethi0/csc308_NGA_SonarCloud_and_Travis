@@ -7,7 +7,4 @@ addons:
       token:
          secure: 66d39d5daa7049bf89edbbddaccc63564f58ab81
 script:
-  mvn sonar:sonar \
-    -Dsonar.organization=maxwellray-github \
-    -Dsonar.host.url=https://sonarcloud.io \
-    -Dsonar.login=66d39d5daa7049bf89edbbddaccc63564f58ab81
+  mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
